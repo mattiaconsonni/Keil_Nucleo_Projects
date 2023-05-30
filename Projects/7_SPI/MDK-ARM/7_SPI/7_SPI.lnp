@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp --branchpatch=sdcomp-29491-629360
+"7_spi\startup_stm32l476xx.o"
+"7_spi\main.o"
+"7_spi\stm32l4xx_it.o"
+"7_spi\stm32l4xx_hal_msp.o"
+"7_spi\stm32l4xx_hal_spi.o"
+"7_spi\stm32l4xx_hal_spi_ex.o"
+"7_spi\stm32l4xx_hal.o"
+"7_spi\stm32l4xx_hal_rcc.o"
+"7_spi\stm32l4xx_hal_rcc_ex.o"
+"7_spi\stm32l4xx_hal_flash.o"
+"7_spi\stm32l4xx_hal_flash_ex.o"
+"7_spi\stm32l4xx_hal_flash_ramfunc.o"
+"7_spi\stm32l4xx_hal_gpio.o"
+"7_spi\stm32l4xx_hal_dma.o"
+"7_spi\stm32l4xx_hal_dma_ex.o"
+"7_spi\stm32l4xx_hal_pwr.o"
+"7_spi\stm32l4xx_hal_pwr_ex.o"
+"7_spi\stm32l4xx_hal_cortex.o"
+"7_spi\stm32l4xx_hal_exti.o"
+"7_spi\stm32l4xx_hal_tim.o"
+"7_spi\stm32l4xx_hal_tim_ex.o"
+"7_spi\system_stm32l4xx.o"
+--strict --scatter "7_SPI\7_SPI.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "7_SPI.map" -o 7_SPI\7_SPI.axf

@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp --branchpatch=sdcomp-29491-629360
+"9_pwm\startup_stm32l476xx.o"
+"9_pwm\main.o"
+"9_pwm\stm32l4xx_it.o"
+"9_pwm\stm32l4xx_hal_msp.o"
+"9_pwm\stm32l4xx_hal_tim.o"
+"9_pwm\stm32l4xx_hal_tim_ex.o"
+"9_pwm\stm32l4xx_hal.o"
+"9_pwm\stm32l4xx_hal_rcc.o"
+"9_pwm\stm32l4xx_hal_rcc_ex.o"
+"9_pwm\stm32l4xx_hal_flash.o"
+"9_pwm\stm32l4xx_hal_flash_ex.o"
+"9_pwm\stm32l4xx_hal_flash_ramfunc.o"
+"9_pwm\stm32l4xx_hal_gpio.o"
+"9_pwm\stm32l4xx_hal_dma.o"
+"9_pwm\stm32l4xx_hal_dma_ex.o"
+"9_pwm\stm32l4xx_hal_pwr.o"
+"9_pwm\stm32l4xx_hal_pwr_ex.o"
+"9_pwm\stm32l4xx_hal_cortex.o"
+"9_pwm\stm32l4xx_hal_exti.o"
+"9_pwm\system_stm32l4xx.o"
+--strict --scatter "9_PWM\9_PWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "9_PWM.map" -o 9_PWM\9_PWM.axf
